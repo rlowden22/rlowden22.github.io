@@ -1,8 +1,8 @@
-# Rowan Lowden Personal Website 
+# Rowan Lowden's Personal Website 
 
 ## Author
 Name: 
-Class: 
+Class:  
 Class Link:
 Design Doc:
 Slides:
