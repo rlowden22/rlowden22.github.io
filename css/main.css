@@ -1,6 +1,6 @@
 /* Reset some defaults */
 body {
-  margin: 0;
+  margin: 100px;
   font-family: monospace;
   background: #1D0966;
 }
