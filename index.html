@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+   <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -29,41 +35,56 @@
 
 <!-- main content of page -->
   <main>
+  
+    <div class="container">
+  <div class="row justify-content-center">
+  
+    <div class="col-4">
+      <img src="images/avataaars (1).png" alt="a cartoon avatar image of rowan with short red hair, a beard, winking with glasses, and a pink sweater."
+      width="300" height="300">
+      </div>
 
-    <!-- Use when you have a thematic grouping of content. -->
-    <section id="About">
-      <h2> Hi, I'm Rowan!</h2>
-      <h3> I'm an aspiring software engineer and full time nerd! </h3>
+    <div class="col-4">
+      <h3> 
+        
+        
+        
+        
+        Hi, I'm Rowan!</h3>
+      <h4> I'm an aspiring software engineer and full time nerd! </h4>
+    </div>
+  </div>
+</div>
 
-    </section>
-
-
-    
-    <section id="Skills">
-    <h2>Technial Skills</h2>
+  <div class="row justify-content-center">
+   <div class="col-8">
+       <h2>Technical Skills</h2>
     <h3>Programming Languages: </h3>
     <h3>Frameworks: </h3>
     <h3>Databases: </h3>
     <h3>Tools: </h3>
-    </section>
+    </div>
+  </div>
+    
+  
 
     <!-- Use when the content could stand alone -->
-  <form class="row g-3">
+  <form class="row justify-content-center">
   
-    <div class="col">
+    <div class="col-8">
     <input type="text" class="form-control" placeholder="name" aria-label="Your Name">
     </div>
     
-  <div class="col">
+  <div class="col-8">
     <input type="text" class="form-control" placeholder="Last name" aria-label="Your Email">
   </div>
 
-  <div class="mb-3">
+  <div class="col-8">
   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 
-  <div class="col-12">
+  <div class="col-8">
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
   </form>
@@ -96,13 +117,6 @@
     </div>
   </footer>
 
-  
-   <!-- Bootstrap JavaScript -->
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-    crossorigin="anonymous">
-  </script>
 
   <!-- JavaScript File -->
   <script src="js/main.js"></script>
