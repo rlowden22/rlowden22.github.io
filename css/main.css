@@ -1,0 +1,40 @@
+/* Reset some defaults */
+body {
+  margin: 0;
+  font-family: monospace;
+  background: #1D0966;
+}
+
+/* Header styles */
+header {
+  display: flex;                 /* Flexbox for layout */
+  justify-content: space-between;/* Push items left and right */
+  align-items: center;           /* Center vertically */
+  background: #4629AC;
+  color: white;
+  padding: 1em;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  padding: 1em;
+}
+
+/* Footer */
+footer {
+  background: #4629AC;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}

@@ -24,7 +24,10 @@ WireFrame:
 
 ## Instructions / how to use!
 
-## Use of AI
+## Use of AI 
+As per the assignment, one page is created using AI, the projects page.  
+
+I used the following prompt while also submitting a screenshot of the original design: "prompt"
 
 ## Relevant Links
 
@@ -35,6 +38,6 @@ Demo Video
 Project Presention
 
 ## License 
-This project is licensed under the MIT License (link to doc)
+This project is licensed under the MIT License []
 
 
