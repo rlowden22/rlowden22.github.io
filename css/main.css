@@ -1,8 +1,9 @@
 /* Reset some defaults */
 body {
-  margin: 100px;
+  margin: 0px;
   font-family: monospace;
   background: #1D0966;
+  color: #fff;
 }
 
 /* Header styles */
@@ -15,11 +16,17 @@ header {
   padding: 1em;
 }
 
+h1{
+    margin-left: 1em;
+}
+
 /* Navigation links */
 nav a {
   color: white;
-  margin-left: 1em;
+  margin-left: 3em;
+  margin-right: 1em;
   text-decoration: none;
+  font-size: larger;
 }
 
 nav a:hover {
@@ -29,12 +36,31 @@ nav a:hover {
 /* Main content */
 main {
   padding: 1em;
+  margin: 100px;
 }
 
 /* Footer */
-footer {
-  background: #4629AC;
-  color: white;
-  text-align: center;
-  padding: 1em;
+.footer-custom {
+  background: #4629AC !important;
+  color: #fff !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 1em !important;
 }
+
+
+/* Footer links */
+.footer-links a,
+.footer-top {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-top:hover {
+  text-decoration: underline;
+}
+
+/* Remove extra spacing on the copyright */
+.footer-custom p { margin: 0; }
