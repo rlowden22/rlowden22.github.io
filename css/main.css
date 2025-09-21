@@ -213,7 +213,7 @@ h1, h2, h3, h4 {
 
 /* Card */
 .project-card {
-  background: #f8f9fa;              /* light neutral */
+  background: #65C9FF;              /* light neutral */
   color: inherit;
   border: 2px solid #4629AC;         /* your purple */
   border-radius: 12px;
@@ -279,4 +279,14 @@ h1, h2, h3, h4 {
 .gh:hover {
   background: #4629AC;
   color: #fff;
+}
+
+.gh img {
+  width: 32px; 
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.gh img:hover {
+  transform: scale(1.1);  /* zoom on hover */
 }
