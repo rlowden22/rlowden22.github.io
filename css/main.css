@@ -153,23 +153,28 @@ main section {
   padding: 20px;
   max-width: 1000px;
 }
-
 /* Grid layout for Education + Hobbies */
 .card-grid .grid {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* responsive wrap */
-  gap: 30px;
+  justify-content: center;
+  flex-wrap: nowrap; /* responsive wrap */
+  gap: 80px;
 }
 
 .card-grid .card {
-  text-align: center;
+  display: flex;              /* make card a flex container */
+  flex-direction: column;     /* stack image above text */
+  align-items: center;        /* center items horizontally */
+  text-align: center;         /* center the text */
   max-width: 250px;
+  background-color: #65C9FF;
+  padding: 1em;               /* optional: breathing room inside card */
+  border-radius: 8px;         /* optional: rounded corners */
 }
 
 .card-grid img {
-  max-width: 150px;
+  width: 12em;
   height: auto;
+  margin: 0 0 1em 0;          /* remove right margin, add bottom spacing */
   display: block;
-  margin: 0 auto 10px;
 }
