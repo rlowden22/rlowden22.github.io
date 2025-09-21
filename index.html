@@ -29,8 +29,9 @@
     <a href="./index.html">Home</a>   
     <a href="./about/index.html">About</a>    
     <a href="./projects/index.html">Projects</a>   
-    <a href="#">Contact</a>
+    <a href="#bottom">Contact</a>
   </nav>
+
 </header>
  
 <body>
@@ -66,29 +67,27 @@
     <img src="images/sql.png" alt="SQL">
   </div>
 </div>
-
-
-
-
-  </section>
+</section>
   
 <section id="bottom" class="d-flex justify-content-center">
-  <form class="form-box">
+  <form class="form-box"  action="https://formspree.io/f/mnngadkq"
+  method="POST">
+  
     <h4>send me a message!</h4>
     <div class="mb-3">
-      <label for="nameInput" class="form-label">Your Name</label>
+      <label for="nameInput" class="form-label">Your name:</label>
       <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
     </div>
     <div class="mb-3">
-      <label for="emailInput" class="form-label">Email address</label>
+      <label for="emailInput" class="form-label">Your email:</label>
       <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
     </div>
     <div class="mb-3">
-      <label for="subjectInput" class="form-label">Subject</label>
+      <label for="subjectInput" class="form-label">subject:</label>
       <input type="text" class="form-control" id="subjectInput" placeholder="Subject of your message">
     </div>
     <div class="mb-3">
-      <label for="messageTextarea" class="form-label">Your Message</label>
+      <label for="messageTextarea" class="form-label">Your message:</label>
       <textarea class="form-control" id="messageTextarea" rows="5" placeholder="Type your message here" required></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Send Message</button>

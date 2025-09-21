@@ -1,4 +1,7 @@
 /* Reset some defaults */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -186,6 +189,43 @@ h1, h2, h3, h4 {
   display: block;
 }
 
+/* Apply same rules to Education + Hobbies */
+.card-grid {
+  margin: 60px auto;
+  max-width: 1000px;
+}
+
+.about-main h2{
+   text-align: center;
+}
+
+.card-grid h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Uniform grid */
+.card-grid .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 40px;
+  justify-items: center;                 /* center each card */
+}
+
+/* Cards */
+.card-grid .card {
+  background: #65C9FF;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;                          /* same width */
+  min-height: 320px;                     /* same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
 /* Projects page */
 .projects {
   max-width: 1100px;
@@ -229,6 +269,7 @@ h1, h2, h3, h4 {
   object-fit: cover;                 /* crop nicely */
   display: block;
 }
+
 
 /* Body */
 .project-body {
