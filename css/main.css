@@ -1,8 +1,9 @@
 /* Reset some defaults */
+
 body {
   margin: 0px;
   font-family: monospace;
-  background: #1D0966;
+  background: #16035c;
   color: #fff;
 }
 
@@ -16,7 +17,7 @@ header {
   padding: 1em;
 }
 
-h1{
+h1 {
     margin-left: 1em;
 }
 
@@ -33,34 +34,102 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main content */
-main {
-  padding: 1em;
-  margin: 100px;
-}
-
-/* Footer */
-.footer-custom {
-  background: #4629AC !important;
-  color: #fff !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  padding: 1em !important;
+h1, h2, h3 {
+  margin-top: 0;  
 }
 
 
-/* Footer links */
-.footer-links a,
-.footer-top {
+#avatar img {
+  width: 15em;
+  height: auto;
+  margin-right: 3em;
+}
+
+.intro {
+  padding: 5% 15%;       /* keep some breathing room, but no forced height */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2%;     /* small gap below intro */
+}
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container {
+  display: flex;         /* puts children in a row */
+  align-items: center;   /* vertically centers the columns */
+  gap: 10px;             /* space between the two columns */
+  margin-left: 100;
+}
+
+.column img {
+  max-width: 300px;      /* control image size */
+  height: auto;          /* keep proportions */
+}
+
+.column {
+  flex: 1;               /* columns can grow/shrink */
+}
+
+
+.center-section {
+  max-width: 800px;   /* keeps text from stretching too wide */
+  margin: 0 auto;     /* centers the block itself */
+  padding: 0 20px;    /* space away from the left/right edges */
+  text-align: left;   /* make sure text is left-aligned */
+  margin-bottom: 5%;
+}
+
+.form-box {
+  max-width: 800px;          /* keeps form from stretching too wide */
+  width: 100%;               /* responsive */
+  background-color: #65C9FF; /* match the background of avatar! */
+  padding: 20px;
+  border: 2px solid #4629AC; /* your purple from footer */
+  border-radius: 10px;       /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  margin-bottom: 2%;
+}
+
+.footer {
+  background: #4629AC;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* space out left/middle/right */
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.footer-links a {
+  margin-right: 1em;
+}
+
+.footer-links img {
+  width: 24px;  /* adjust size */
+  height: 24px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.footer-links img:hover {
+  transform: scale(1.1);  /* little zoom on hover */
+}
+
+.footer-copy {
+  text-align: center;
+  flex: 1;   /* allows it to stay centered */
+}
+
+.footer-top a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer-links a:hover,
-.footer-top:hover {
+.footer-top a:hover {
   text-decoration: underline;
 }
 
-/* Remove extra spacing on the copyright */
-.footer-custom p { margin: 0; }
