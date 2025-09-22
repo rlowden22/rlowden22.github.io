@@ -42,4 +42,8 @@ Project Presention
 ## License 
 This project is licensed under the MIT License []
 
+## resources 
+* free pix icons 
+* formspree for message form!
+
 
