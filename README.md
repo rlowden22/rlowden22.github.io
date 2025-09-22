@@ -43,7 +43,8 @@ Project Presention
 This project is licensed under the MIT License []
 
 ## resources 
-* free pix icons 
+* freepix on flat icons icons 
+https://www.flaticon.com/authors/freepik
 * formspree for message form!
 
 
