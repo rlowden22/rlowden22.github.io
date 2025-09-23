@@ -137,13 +137,16 @@ nav a:hover { text-decoration: underline; }
    Wrap your <main> with class="projects"
    ================================ */
 .projects { max-width: 1100px; margin: 0 auto; padding: 20px; }
-.projects h1 { margin: 20px 0 30px; text-align: center; }
+.projects h2 { margin: 20px 0 30px; text-align: center; }
 
 /* 2x2 grid desktop, 1x4 mobile */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
+  margin: 0 auto;     /* keep grid centered inside parent */
+  width: 100%;
+  align-items: stretch;
 }
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
@@ -180,6 +183,8 @@ nav a:hover { text-decoration: underline; }
   grid-template-columns: 1fr auto;
   row-gap: 10px; column-gap: 12px;
 }
+
+
 
 /* Title + desc */
 .project-title { grid-area: title; margin: 0 0 8px; font-size: 1.25rem; }

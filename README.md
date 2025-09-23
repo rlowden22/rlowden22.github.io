@@ -27,6 +27,10 @@ The objective of this project is to practice my webdevelopment skills and create
 - Interactive JavaScript – Avatar image changes on hover.
   
 ## Screenshots
+![Home](images/screenshots/home.png)  
+![About1](images/screenshots/about1.png)  
+![About2](images/screenshots/about2.png)  
+![Projects](images/screenshots/projects.png)  
 
 ## Technology Stack
 - HTML5 – Semantic markup for structure and accessibility.
