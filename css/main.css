@@ -1,319 +1,197 @@
-/* Reset some defaults */
-html {
-  scroll-behavior: smooth;
-}
+/* ================================
+   GLOBAL / BASE (all pages)
+   ================================ */
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
   font-family: monospace;
   background: #1eacc5; /* light blue */
-  color: #000;         /* switch text to black so it’s readable */
+  color: #000;
 }
 
-/* Header styles */
+h1, h2, h3, h4 { margin-top: 0; margin-bottom: 1rem; }
+
+/* Layout helpers */
+.container { display: flex; align-items: center; gap: 10px; }
+.column { flex: 1; }
+.column img { max-width: 300px; height: auto; }
+
+/* ================================
+   HEADER (all pages)
+   ================================ */
 header {
-  display: flex;                 /* Flexbox for layout */
-  justify-content: space-between;/* Push items left and right */
-  align-items: center;           /* Center vertically */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #1b9ebe;
   color: #070101;
   padding: 1em;
 }
+h1 { margin-left: 1em; }
 
-h1 {
-    margin-left: 1em;
-}
-
-/* Navigation links */
 nav a {
   color: #070101;
-  margin-left: 3em;
-  margin-right: 1em;
+  margin: 0 1em 0 3em;
   text-decoration: none;
   font-size: larger;
 }
+nav a:hover { text-decoration: underline; }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4 {
-  margin-top: 0;  
-  margin-bottom: 4%; 
-}
-/* General spacing for sections */
-.about-main section {
-  margin: 60px auto;
-  padding: 20px;
-  max-width: 1000px;
-}
-
-
-#avatar img {
-  width: 15em;
-  height: auto;
-  margin-right: 3em;
-}
-
-.intro {
-  padding: 5% 15%;       /* keep some breathing room, but no forced height */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 2%;     /* small gap below intro */
-}
-
-.intro-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.container {
-  display: flex;         /* puts children in a row */
-  align-items: center;   /* vertically centers the columns */
-  gap: 10px;             /* space between the two columns */
-  margin-left: 100;
-}
-
-.column img {
-  max-width: 300px;      /* control image size */
-  height: auto;          /* keep proportions */
-}
-
-.column {
-  flex: 1;               /* columns can grow/shrink */
-}
-
-
-.center-section {
-  max-width: 800px;   /* keeps text from stretching too wide */
-  margin: 0 auto;     /* centers the block itself */
-  padding: 0 20px;    /* space away from the left/right edges */
-  text-align: left;   /* make sure text is left-aligned */
-  margin-bottom: 5%;
-}
-
-.skills-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;   /* wrap onto new line if too many */
-  gap: 60px;         /* space between icons */
-}
-
-.skills-row img {
-  width: 60px;       /* set consistent icon size */
-  height: auto;
-}
-
-#speech img {
-  width: 40px;       /* set consistent icon size */
-  height: auto;
-  
-}
-
-.form-box {
-  max-width: 800px;          /* keeps form from stretching too wide */
-  width: 100%;               /* responsive */
-  background-color: #65C9FF; /* match the background of avatar! */
-  padding: 20px;
-  border: 2px solid #4629AC; /* your purple from footer */
-  border-radius: 10px;       /* rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
-  margin-bottom: 2%;
-}
-
+/* ================================
+   FOOTER (all pages)
+   ================================ */
 .footer {
   background: #1b9ebe;
   color: #070101;
   display: flex;
-  justify-content: space-between; /* space out left/middle/right */
+  justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
 }
-
-.footer-links a {
-  margin-right: 1em;
-}
-
+.footer-links a { margin-right: 1em; }
 .footer-links img {
-  width: 24px;  /* adjust size */
-  height: 24px;
-  vertical-align: middle;
+  width: 24px; height: 24px; vertical-align: middle;
   transition: transform 0.2s ease;
 }
+.footer-links img:hover { transform: scale(1.1); }
+.footer-copy { text-align: center; flex: 1; }
+.footer-top a { color: #070101; text-decoration: none; }
 
-.footer-links img:hover {
-  transform: scale(1.1);  /* little zoom on hover */
-}
-
-.footer-copy {
-  text-align: center;
-  flex: 1;   /* allows it to stay centered */
-}
-
-.footer-top a {
-  color: #070101;
-  text-decoration: none;
-}
-
-.footer-top a:hover {
-  text-decoration: underline;
-}
-
-
-
-/* Grid layout for Education + Hobbies */
-.card-grid .grid {
+/* ================================
+   HOME PAGE (intro, skills, contact)
+   ================================ */
+/* Intro/Hero */
+.intro {
+  padding: 5% 15%;
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap; /* responsive wrap */
-  gap: 80px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.intro-wrapper { display: flex; flex-direction: column; }
+#avatar img { width: 15em; height: auto; margin-right: 3em; }
+
+/* Center text section (optional block on home) */
+.center-section {
+  max-width: 800px;
+  margin: 0 auto 5%;
+  padding: 0 20px;
 }
 
-.card-grid .card {
-  display: flex;              /* make card a flex container */
-  flex-direction: column;     /* stack image above text */
-  align-items: center;        /* center items horizontally */
-  text-align: center;         /* center the text */
-  max-width: 250px;
+/* Skills row */
+.skills-row {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 60px;
+}
+.skills-row img { width: 60px; height: auto; }
+#speech img { width: 40px; height: auto; }
+
+/* Contact form box */
+.form-box {
+  max-width: 800px; width: 100%;
   background-color: #65C9FF;
-  padding: 1em;               /* optional: breathing room inside card */
-  border-radius: 8px;         /* optional: rounded corners */
+  padding: 20px;
+  border: 2px solid #4629AC;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2%;
 }
 
-.card-grid img {
-  width: 12em;
-  height: auto;
-  margin: 0 0 1em 0;          /* remove right margin, add bottom spacing */
-  display: block;
-}
+/* ================================
+   ABOUT PAGE (Education + Hobbies)
+   ================================ */
+.about-main section { margin: 60px auto; padding: 20px; max-width: 1000px; }
+.about-main h2 { text-align: center; margin-bottom: 30px; }
 
-/* Apply same rules to Education + Hobbies */
-.card-grid {
-  margin: 60px auto;
-  max-width: 1000px;
-}
+/* Shared grid wrapper for Education + Hobbies */
+.card-grid { max-width: 1000px; margin: 60px auto; }
+.card-grid h2 { text-align: center; margin-bottom: 30px; }
 
-.about-main h2{
-   text-align: center;
-}
-
-.card-grid h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* Uniform grid */
+/* 3-up uniform grid */
 .card-grid .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 40px;
-  justify-items: center;                 /* center each card */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;                 /* uniform spacing */
+  justify-items: center;     /* center each card */
 }
 
 /* Cards */
 .card-grid .card {
-  background: #65C9FF;
-  text-align: center;
+  width: 250px;              /* consistent width */
+  min-height: 320px;         /* consistent height */
   padding: 20px;
   border-radius: 8px;
-  width: 250px;                          /* same width */
-  min-height: 320px;                     /* same height */
+  background: #65C9FF;
+  text-align: center;
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+}
+.card-grid .card img {
+  width: 12em; height: auto; display: block; margin-bottom: 1em;
 }
 
+/* ================================
+   PROJECTS PAGE (grid + cards)
+   Wrap your <main> with class="projects"
+   ================================ */
+.projects { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.projects h1 { margin: 20px 0 30px; text-align: center; }
 
-/* Projects page */
-.projects {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.projects h1 {
-  margin: 20px 0 30px;
-  text-align: center;
-}
-
-/* 2x2 grid on desktop, 1x4 on mobile */
+/* 2x2 grid desktop, 1x4 mobile */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
 }
-
 @media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+  .projects-grid { grid-template-columns: 1fr; }
 }
 
-/* Card */
+/* Project Card */
 .project-card {
-  background: #65C9FF;              /* light neutral */
+  background: #65C9FF;
   color: inherit;
-  border: 2px solid #4629AC;         /* your purple */
+  border: 2px solid #4629AC;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
-/* Image */
+/* Media */
 .project-card img {
   width: 100%;
-  height: 300px;                     /* consistent card tops */
-  object-fit: cover;                 /* crop nicely */
+  height: 300px;
+  object-fit: cover;
   display: block;
 }
-
 
 /* Body */
 .project-body {
   padding: 16px 16px 12px;
   display: grid;
   grid-template-areas:
-    "title  gh"
-    "desc   desc"
-    "tech   tech";
+    "title gh"
+    "desc  desc"
+    "tech  tech";
   grid-template-columns: 1fr auto;
-  row-gap: 10px;
-  column-gap: 12px;
+  row-gap: 10px; column-gap: 12px;
 }
 
+/* Title + desc */
+.project-title { grid-area: title; margin: 0 0 8px; font-size: 1.25rem; }
+.project-desc  { grid-area: desc; margin: 0 0 12px; line-height: 1.4; }
 
-.project-title { grid-area: title; 
-  margin: 8px  0 8px;
-  font-size: 1.25rem;
-  flex-grow: 1;            /* pushes tech to the bottom */
-  margin: 0 0 12px;
- }
-
-
-.project-desc  { 
-  grid-area: desc;  
-  margin: 0; 
-  line-height: 1.4;
-flex-grow: 1;            /* pushes tech to the bottom */
-  margin: 0 0 12px;
-}
-
- 
-
+/* Tech chips stick to bottom */
 .tech {
   grid-area: tech;
-  margin-top: auto; 
-  list-style: none;
-  padding: 0;
-  margin: 8px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  margin-top: auto;
+  list-style: none; padding: 0; margin: 8px 0 0;
+  display: flex; flex-wrap: wrap; gap: 8px;
 }
-
 .tech li {
   border: 1px solid #4629AC;
   padding: 4px 8px;
@@ -322,29 +200,25 @@ flex-grow: 1;            /* pushes tech to the bottom */
   background: #fff;
 }
 
-/* GitHub icon link */
+/* GitHub icon button */
 .gh {
   grid-area: gh;
   align-self: start;
-  color: #4629AC;
-  text-decoration: none;
+  color: #4629AC; text-decoration: none;
   display: inline-flex;
   border: 1px solid #4629AC;
-  padding: 6px;
-  border-radius: 8px;
+  padding: 6px; border-radius: 8px;
 }
+.gh:hover { background: #4629AC; color: #fff; }
+.gh img { width: 32px; height: auto; transition: transform 0.2s ease; }
+.gh img:hover { transform: scale(1.1); }
 
-.gh:hover {
-  background: #4629AC;
-  color: #fff;
+/* ================================
+   RESPONSIVE (for other devices)
+   ================================ */
+@media (max-width: 900px) {
+  .card-grid .grid { grid-template-columns: repeat(2, 1fr); }
 }
-
-.gh img {
-  width: 32px; 
-  height: auto;
-  transition: transform 0.2s ease;
-}
-
-.gh img:hover {
-  transform: scale(1.1);  /* zoom on hover */
+@media (max-width: 600px) {
+  .card-grid .grid { grid-template-columns: 1fr; }
 }
