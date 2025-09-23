@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const avatar = document.getElementById("profile-pic");
 
   // hobby switch: Arrays of images for each hobby
-  const filmImages = ["images/film/video-camera.png", "images/film/horror.png", "images/film/clapperboard.png"];
-  const geologyImages = ["images/geology/geology.png", "images/geology/earth.png", "images/geology/geological.png"];
-  const f1Images = ["images/f1/driver.png", "images/f1/formula-1.png", "images/f1/wet.png"];
+  const filmImages = ["../images/film/video-camera.png", "../images/film/horror.png", "../images/film/clapperboard.png"];
+  const geologyImages = ["../images/geology/geology.png", "../images/geology/earth.png", "../images/geology/geological.png"];
+  const f1Images = ["../images/f1/driver.png", "../images/f1/formula-1.png", "../images/f1/wet.png"];
 
 
   // store the two image paths
-  const original = "images\avataaars (2).png"
-  const hover = "images\avataaars (1).png";
+  const original = "images/icons/avataaars (2).png"
+  const hover =  "images/icons/avataaars (1).png";
 
   // swap on hover
   avatar.addEventListener("mouseenter", () => {
