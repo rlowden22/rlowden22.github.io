@@ -1,9 +1,10 @@
 
 // Swap avatar from blue to pink on hover
 export function initAvatarSwap({
+
   imgSelector = "#profile-pic",
-  original = "images/icons/avataaarsblue.png",
-  hover = "images/icons/avataaarspink.png",
+  original = "../images/icons/avataaarsblue.png",
+  hover = "../images/icons/avataaarspink.png",
 } = {}) {
   const img = document.querySelector(imgSelector);
   if (!img) return;
