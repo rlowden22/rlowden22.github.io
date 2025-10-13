@@ -1,133 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
+    <meta name="author" content="Rowan Lowden" />
+    <meta
+      name="description"
+      content="Rowan Lowden's website showcasing skills, projects, and contact information."
+    />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowan Lowden's website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-  <meta name="author" content="Rowan Lowden">
-  <meta name="description" content="Rowan Lowden's website showcasing skills, projects, and contact information.">
-  
-  <title>Rowan Lowden's website</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="./css/main.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
+  <body>
+    <header>
+      <h1>Rowan Lowden</h1>
 
-</head>
+      <!-- Navigation bar -->
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about/index.html">About</a>
+        <a href="./projects/index.html">Projects</a>
+        <a href="#bottom">Contact</a>
+      </nav>
+    </header>
 
-<body>
-<header>
-<h1> Rowan Lowden </h1>
+    <!-- main content of page -->
+    <main>
+      <section id="top" class="intro">
+        <div class="container">
+          <div id="avatar" class="column">
+            <img
+              id="profile-pic"
+              src="/images/icons/avataaarsblue.png"
+              alt="Rowan avatar"
+            />
+          </div>
 
-<!-- Navigation bar -->
-  <nav>
-    <a href="./index.html">Home</a>   
-    <a href="./about/index.html">About</a>    
-    <a href="./projects/index.html">Projects</a>   
-    <a href="#bottom">Contact</a>
-  </nav>
+          <div class="column">
+            <h2 id="speech">
+              Hi, I'm Rowan!<img
+                src="/images/icons/speech.png"
+                alt="pride icon"
+              />
+            </h2>
+            <p>
+              A computer science graduate student and aspiring software engineer
+              with a background in geochemistry and geophysics. I’m passionate
+              about building software that connects science and
+              technology—whether modeling Earth systems, visualizing complex
+              data, or creating applications that support education and
+              community impact. This site highlights my projects, technical
+              skills, personal interests, and ongoing journey to software
+              engineering.
+            </p>
+            <p>
+              Hover over the avatar for a little
+              suprise!
+            </p>
+          </div>
+        </div>
+      </section>
 
-</header>
- 
+      <section id="skills" class="skils">
+        <!-- Second row: centered text -->
+        <div class="center-section">
+          <h4>Technical Skills</h4>
+          <div class="skills-row">
+            <img src="images/icons/csshtml.png" alt="HTML/CSS" />
+            <img src="images/icons/javascript.png" alt="JavaScript" />
+            <img src="images/icons/python.png" alt="Python" />
+            <img src="images/icons/java.png" alt="Java" />
+            <img src="images/icons/c-.png" alt="C++" />
+            <img src="images/icons/sql.png" alt="SQL" />
+          </div>
+        </div>
+      </section>
 
-<!-- main content of page -->
-  <main>
-
-  <section id="top" class="intro">
-
-  <div class="container">
-  <div id= "avatar" class="column">
-    <img id="profile-pic" src="/images/icons/avataaarsblue.png" alt= "Rowan avatar">
-  </div>
-  
-  <div class="column">
-    <h2 id="speech">Hi, I'm Rowan!<img src="/images/icons/speech.png" alt="pride icon" ></h2> 
-    <p>A computer science graduate student and aspiring software engineer. I’m passionate about building software that solves real-world problems, from educational tools to community-focused applications. This site highlights my projects, skills, and journey into software engineering.</p>
-    
-  </div>
-</div>
-</section>
-
-  <section id="skills" class="skils">
-
-      <!-- Second row: centered text -->
-  <div class="center-section">
-    <h4>Technical Skills</h4>
-    <div class="skills-row">
-    <img src="images/icons/csshtml.png" alt="HTML/CSS">
-    <img src="images/icons/javascript.png" alt="JavaScript">
-    <img src="images/icons/python.png" alt="Python">
-    <img src="images/icons/java.png" alt="Java">
-    <img src="images/icons/c-.png" alt="C++">
-    <img src="images/icons/sql.png" alt="SQL">
-  </div>
-</div>
-</section>
-  
-<section id="bottom" class="d-flex justify-content-center">
-  <form class="form-box"  action="https://formspree.io/f/mnngadkq"
-  method="POST">
-  
-    <h4>send me a message!</h4>
-    <div class="mb-3">
-      <label for="nameInput" class="form-label">Your name:</label>
-      <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
-    </div>
-    <div class="mb-3">
-      <label for="emailInput" class="form-label">Your email:</label>
-      <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
-    </div>
-    <div class="mb-3">
-      <label for="subjectInput" class="form-label">subject:</label>
-      <input type="text" class="form-control" id="subjectInput" placeholder="Subject of your message">
-    </div>
-    <div class="mb-3">
-      <label for="messageTextarea" class="form-label">Your message:</label>
-      <textarea class="form-control" id="messageTextarea" rows="5" placeholder="Type your message here" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-  </form>
-</section>
-
-</main>
+      <section id="bottom" class="d-flex justify-content-center">
+        <form
+          class="form-box"
+          action="https://formspree.io/f/mnngadkq"
+          method="POST"
+        >
+          <h4>send me a message!</h4>
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Your name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nameInput"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Your email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailInput"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="subjectInput" class="form-label">subject:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subjectInput"
+              placeholder="Subject of your message"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="messageTextarea" class="form-label"
+              >Your message:</label
+            >
+            <textarea
+              class="form-control"
+              id="messageTextarea"
+              rows="5"
+              placeholder="Type your message here"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </main>
 
     <!-- Footer-->
-     <footer class="footer">
+    <footer class="footer">
+      <!-- Left: social links -->
+      <div class="footer-links">
+        <a
+          href="https://linkedin.com/in/rowanlowden"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="images/icons/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/rlowden22" target="_blank" rel="noopener">
+          <img src="images/icons/github.png" alt="GitHub" />
+        </a>
+        <a href="#bottom">
+          <img src="images/icons/email.png" alt="Contact" />
+        </a>
+      </div>
 
-  <!-- Left: social links -->
-  <div class="footer-links">
-    <a href="https://linkedin.com/in/rowanlowden" target="_blank" rel="noopener">
-      <img src="images/icons/linkedin.png" alt="LinkedIn">
-    </a>
-    <a href="https://github.com/rlowden22" target="_blank" rel="noopener">
-      <img src="images/icons/github.png" alt="GitHub">
-    </a>
-    <a href="#bottom">
-      <img src="images/icons/email.png" alt="Contact">
-    </a>
-  </div>
+      <!-- Center: copyright -->
+      <div class="footer-copy">© 2025 Rowan Lowden | All rights reserved.</div>
 
-  <!-- Center: copyright -->
-  <div class="footer-copy">
-    © 2025 Rowan Lowden | All rights reserved.
-  </div>
+      <!-- Right: back to top -->
+      <div class="footer-top">
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
 
-  <!-- Right: back to top -->
-  <div class="footer-top">
-    <a href="#top">Back to top ↑</a>
-  </div>
-</footer>
-  
-
-
-  <!-- JavaScript File -->
-  <script  type="module" src="js/main.js"></script>
-
-</body>
-
-
+    <!-- JavaScript File -->
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

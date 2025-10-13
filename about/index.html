@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Rowan Lowden">
-    <meta name="description" content="Rowan Lowden's website showcasing skills, projects, and contact information.">
-
+    <meta name="author" content="Rowan Lowden" />
+    <meta
+      name="description"
+      content="Rowan Lowden's website showcasing skills, projects, and contact information."
+    />
 
     <title>Rowan Lowden's About</title>
 
@@ -17,116 +17,149 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    >
-   
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="../css/main.css">
-</head>
+    />
 
-<body>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
 
-<header>
-<h1> Rowan Lowden </h1>
+  <body>
+    <header>
+      <h1>Rowan Lowden</h1>
 
-<!-- Navigation bar -->
-  <nav>
-    <a href="../index.html">Home</a>   
-    <a href="../about/index.html">About</a>    
-    <a href="../projects/index.html">Projects</a>   
-    <a href="../index.html#bottom">Contact</a>
-  </nav>
-</header>
+      <!-- Navigation bar -->
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about/index.html">About</a>
+        <a href="../projects/index.html">Projects</a>
+        <a href="../index.html#bottom">Contact</a>
+      </nav>
+    </header>
 
+    <!-- main content of page -->
+    <main>
+      <div class="about-main">
+        <section id="about-me" class="about-section">
+          <h2>About Me</h2>
+          <p>
+            I began my career studying geology and chemistry, developing a
+            strong foundation in scientific analysis and problem-solving. My
+            work in geophysics deepened my interest in modeling Earth processes
+            and interpreting complex data, which first led towards teaching high
+            school STEM, then eventually led me toward computing and software
+            development.
+          </p>
+          <p>
+            After years of bridging science and technology in the classroom, I
+            took the leap to study Computer Science at the graduate level. I’ve
+            since gained experience in Python, Java, and C/C++, as well as
+            algorithms, data structures, and software design. I’m especially
+            interested in projects that merge geospatial data, scientific
+            modeling, and computational methods.
+          </p>
+          <p>
+            My long-term goal is to become a software engineer who applies
+            data-driven and scientific approaches to solve real-world
+            challenges. I’m motivated by work that connects innovation with
+            equity, accessibility, and impact—whether in research, community
+            technology, or environmental applications.
+          </p>
+        </section>
 
+        <section id="education" class="card-grid">
+          <!-- Second row: centered text -->
+          <div class="center-section">
+            <h2>Education</h2>
 
-<!-- main content of page -->
-  <main>
-    <div class="about-main">
+            <div class="grid">
+              <div class="card">
+                <img src="../images/education/MHC.png" alt="MHC" />
+                <p>
+                  <strong>Mount Holyoke College</strong><br />BS: Geology &
+                  Chemistry<br />2010–2014
+                </p>
+              </div>
+              <div class="card">
+                <img src="../images/education/UO.png" alt="UO Logo" />
+                <p>
+                  <strong>University of Oregon</strong><br />MEd: Curriculum &
+                  Teaching<br />2019–2020
+                </p>
+              </div>
+              <div class="card">
+                <img
+                  src="../images/education/NU.png"
+                  alt="Northeastern University Logo"
+                />
+                <p>
+                  <strong>Northeastern University</strong><br />MS: Computer
+                  Science<br />2024–current
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <section id="about-me" class="about-section">
-    <h2>About Me</h2>
-    <p>I began my career studying geology and chemistry before moving into teaching, where I discovered how much I enjoy breaking down complex ideas and supporting others in their learning. Over the years, I’ve worked with diverse students and communities, gaining experience in communication, collaboration, and problem-solving.</p>
-    <p> After many years of wondering whether I fit in the world of technology, I took the leap to study Computer Science at the graduate level. I’ve since gained experience in Python, Java, C, algorithms, and data structures, and I continue to grow my skills through projects and coursework.</p>
-    <p>My long-term goal is to become a software engineer who uses technology to create solutions for social and community challenges. I’m especially motivated by projects that combine technical innovation with equity, accessibility, and real-world impact.</p>
-    </section>
-
-    <section id="education" class="card-grid">
-
-  <!-- Second row: centered text -->
-  <div class="center-section">
-    <h2>Education</h2>
-
-    <div class="grid">
-        <div class="card">
-          <img src="../images/education/MHC.png" alt="MHC">
-        <p><strong>Mount Holyoke College</strong><br>BS: Geology & Chemistry<br>2010–2014</p>
+        <section id="hobbies" class="card-grid">
+          <h2>Hobbies</h2>
+          <div class="grid">
+            <div class="card">
+              <img
+                id="hobby-film"
+                src="../images/film/video-camera.png"
+                alt="Film Image"
+              />
+              <p>Film</p>
+            </div>
+            <div class="card">
+              <img
+                id="hobby-geology"
+                src="../images/geology/geology.png"
+                alt="Geology image"
+              />
+              <p>Geology</p>
+            </div>
+            <div class="card">
+              <img
+                id="hobby-f1"
+                src="../images/f1/formula-1.png"
+                alt="F1 image"
+              />
+              <p>F1</p>
+            </div>
+          </div>
+        </section>
       </div>
-       <div class="card">
-        <img src="../images/education/UO.png" alt="UO Logo">
-        <p><strong>University of Oregon</strong><br>MEd: Curriculum & Teaching<br>2019–2020</p>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <!-- Left: social links -->
+      <div class="footer-links">
+        <a
+          href="https://linkedin.com/in/rowanlowden"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="../images/icons/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/rlowden22" target="_blank" rel="noopener">
+          <img src="../images/icons/github.png" alt="GitHub" />
+        </a>
+        <a href="../index.html#bottom">
+          <img src="../images/icons/email.png" alt="Contact" />
+        </a>
       </div>
-      <div class="card">
-        <img src="../images/education/NU.png" alt="Northeastern University Logo">
-        <p><strong>Northeastern University</strong><br>MS: Computer Science<br>2024–current</p>
+
+      <!-- Center: copyright -->
+      <div class="footer-copy">© 2025 Rowan Lowden | All rights reserved.</div>
+
+      <!-- Right: back to top -->
+      <div class="footer-top">
+        <a href="#top">Back to top ↑</a>
       </div>
-    </div>
-    </div>
-</section>
+    </footer>
 
-  <section id="hobbies" class="card-grid">
-    <h2>Hobbies</h2>
-    <div class="grid">
-      <div class="card">
-        <img id="hobby-film" src="../images/film/video-camera.png" alt="Film Image">
-        <p>Film</p>
-      </div>
-      <div class="card">
-        <img id ="hobby-geology" src="../images/geology/geology.png" alt="Geology image">
-        <p>Geology</p>
-      </div>
-      <div class="card">
-        <img id="hobby-f1" src="../images/f1/formula-1.png" alt="F1 image">
-        <p>F1</p>
-      </div>
-    </div>
-
-  </section>
-</div>
-
-  </main>
-  <!-- Footer-->
-     <footer class="footer">
-
-  <!-- Left: social links -->
-  <div class="footer-links">
-    <a href="https://linkedin.com/in/rowanlowden" target="_blank" rel="noopener">
-      <img src="../images/icons/linkedin.png" alt="LinkedIn">
-    </a>
-    <a href="https://github.com/rlowden22" target="_blank" rel="noopener">
-      <img src="../images/icons/github.png" alt="GitHub">
-    </a>
-    <a href="../index.html#bottom">
-      <img src="../images/icons/email.png" alt="Contact">
-    </a>
-  </div>
-
-
-  <!-- Center: copyright -->
-  <div class="footer-copy">
-    © 2025 Rowan Lowden | All rights reserved.
-  </div>
-
-  <!-- Right: back to top -->
-  <div class="footer-top">
-    <a href="#top">Back to top ↑</a>
-  </div>
-</footer>
-  
-
-
-  <!-- JavaScript File -->
-  <script  type="module" src="../js/main.js"></script>
-
-</body>
-
+    <!-- JavaScript File -->
+    <script type="module" src="../js/main.js"></script>
+  </body>
 </html>
