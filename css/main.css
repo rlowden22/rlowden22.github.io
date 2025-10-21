@@ -1,7 +1,9 @@
 /* ================================
    GLOBAL / BASE (all pages)
    ================================ */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -10,12 +12,27 @@ body {
   color: #000;
 }
 
-h1, h2, h3, h4 { margin-top: 0; margin-bottom: 1rem; }
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
 /* Layout helpers */
-.container { display: flex; align-items: center; gap: 10px; }
-.column { flex: 1; }
-.column img { max-width: 300px; height: auto; }
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.column {
+  flex: 1;
+}
+.column img {
+  max-width: 300px;
+  height: auto;
+}
 
 /* ================================
    HEADER (all pages)
@@ -28,7 +45,9 @@ header {
   color: #070101;
   padding: 1em;
 }
-h1 { margin-left: 1em; }
+h1 {
+  margin-left: 1em;
+}
 
 nav a {
   color: #070101;
@@ -36,7 +55,9 @@ nav a {
   text-decoration: none;
   font-size: larger;
 }
-nav a:hover { text-decoration: underline; }
+nav a:hover {
+  text-decoration: underline;
+}
 
 /* ================================
    FOOTER (all pages)
@@ -49,14 +70,26 @@ nav a:hover { text-decoration: underline; }
   align-items: center;
   padding: 1em 2em;
 }
-.footer-links a { margin-right: 1em; }
+.footer-links a {
+  margin-right: 1em;
+}
 .footer-links img {
-  width: 24px; height: 24px; vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
   transition: transform 0.2s ease;
 }
-.footer-links img:hover { transform: scale(1.1); }
-.footer-copy { text-align: center; flex: 1; }
-.footer-top a { color: #070101; text-decoration: none; }
+.footer-links img:hover {
+  transform: scale(1.1);
+}
+.footer-copy {
+  text-align: center;
+  flex: 1;
+}
+.footer-top a {
+  color: #070101;
+  text-decoration: none;
+}
 
 /* ================================
    HOME PAGE (intro, skills, contact)
@@ -69,8 +102,15 @@ nav a:hover { text-decoration: underline; }
   align-items: center;
   margin-bottom: 2%;
 }
-.intro-wrapper { display: flex; flex-direction: column; }
-#avatar img { width: 15em; height: auto; margin-right: 3em; }
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#avatar img {
+  width: 15em;
+  height: auto;
+  margin-right: 3em;
+}
 
 /* Center text section (optional block on home) */
 .center-section {
@@ -81,82 +121,136 @@ nav a:hover { text-decoration: underline; }
 
 /* Skills row */
 .skills-row {
-  display: flex; justify-content: center; flex-wrap: wrap; gap: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
 }
-.skills-row img { width: 60px; height: auto; }
-#speech img { width: 40px; height: auto; }
+.skills-row img {
+  width: 60px;
+  height: auto;
+}
+#speech img {
+  width: 40px;
+  height: auto;
+}
 
 /* Contact form box */
 .form-box {
-  max-width: 800px; width: 100%;
-  background-color: #65C9FF;
+  max-width: 800px;
+  width: 100%;
+  background-color: #65c9ff;
   padding: 20px;
-  border: 2px solid #4629AC;
+  border: 2px solid #4629ac;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2%;
 }
 
 /* ================================
    ABOUT PAGE (Education + Hobbies)
    ================================ */
-.about-main section { margin: 60px auto; padding: 20px; max-width: 1000px; }
-.about-main h2 { text-align: center; margin-bottom: 30px; }
+.about-main section {
+  margin: 60px auto;
+  padding: 40px;
+  max-width: 500px;
+}
+.about-main h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 /* Shared grid wrapper for Education + Hobbies */
-.card-grid { max-width: 1000px; margin: 60px auto; }
-.card-grid h2 { text-align: center; margin-bottom: 30px; }
+.card-grid {
+  max-width: 1000px;
+  margin: 60px auto;
+}
+.card-grid h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 /* 3-up uniform grid */
 .card-grid .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;                 /* uniform spacing */
-  justify-items: center;     /* center each card */
+  gap: 40px; /* uniform spacing */
+  justify-items: center;
+  align-items: stretch; /* center each card */
 }
 
 /* Cards */
 .card-grid .card {
-  width: 250px;              /* consistent width */
-  min-height: 320px;         /* consistent height */
+  width: 100%; /* let it expand evenly in its column */
+  max-width: 250px; /* still keeps consistent sizing */
+  height: 100%; /*  match the tallest card in the row */
   padding: 20px;
   border-radius: 8px;
-  background: #65C9FF;
+  background: #65c9ff;
   text-align: center;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between; /* 👈 evenly space image/text vertically */
 }
 .card-grid .card img {
-  width: 12em; height: auto; display: block; margin-bottom: 1em;
+  width: 12em;
+  height: auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-main section {
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+.card-grid {
+  max-width: 1000px;
+  margin: 60px auto;
 }
 
 /* ================================
    PROJECTS PAGE (grid + cards)
    Wrap your <main> with class="projects"
    ================================ */
-.projects { max-width: 1100px; margin: 0 auto; padding: 20px; }
-.projects h2 { margin: 20px 0 30px; text-align: center; }
+.projects {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.projects h2 {
+  margin: 20px 0 30px;
+  text-align: center;
+}
 
 /* 2x2 grid desktop, 1x4 mobile */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
-  margin: 0 auto;     /* keep grid centered inside parent */
+  margin: 0 auto; /* keep grid centered inside parent */
   width: 100%;
   align-items: stretch;
 }
 @media (max-width: 768px) {
-  .projects-grid { grid-template-columns: 1fr; }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Project Card */
 .project-card {
-  background: #65C9FF;
+  background: #65c9ff;
   color: inherit;
-  border: 2px solid #4629AC;
+  border: 2px solid #4629ac;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
@@ -181,24 +275,35 @@ nav a:hover { text-decoration: underline; }
     "desc  desc"
     "tech  tech";
   grid-template-columns: 1fr auto;
-  row-gap: 10px; column-gap: 12px;
+  row-gap: 10px;
+  column-gap: 12px;
 }
 
-
-
 /* Title + desc */
-.project-title { grid-area: title; margin: 0 0 8px; font-size: 1.25rem; }
-.project-desc  { grid-area: desc; margin: 0 0 12px; line-height: 1.4; }
+.project-title {
+  grid-area: title;
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+.project-desc {
+  grid-area: desc;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
 
 /* Tech chips stick to bottom */
 .tech {
   grid-area: tech;
   margin-top: auto;
-  list-style: none; padding: 0; margin: 8px 0 0;
-  display: flex; flex-wrap: wrap; gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .tech li {
-  border: 1px solid #4629AC;
+  border: 1px solid #4629ac;
   padding: 4px 8px;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -209,21 +314,36 @@ nav a:hover { text-decoration: underline; }
 .gh {
   grid-area: gh;
   align-self: start;
-  color: #4629AC; text-decoration: none;
+  color: #4629ac;
+  text-decoration: none;
   display: inline-flex;
-  border: 1px solid #4629AC;
-  padding: 6px; border-radius: 8px;
+  border: 1px solid #4629ac;
+  padding: 6px;
+  border-radius: 8px;
 }
-.gh:hover { background: #4629AC; color: #fff; }
-.gh img { width: 32px; height: auto; transition: transform 0.2s ease; }
-.gh img:hover { transform: scale(1.1); }
+.gh:hover {
+  background: #4629ac;
+  color: #fff;
+}
+.gh img {
+  width: 32px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+.gh img:hover {
+  transform: scale(1.1);
+}
 
 /* ================================
    RESPONSIVE (for other devices)
    ================================ */
 @media (max-width: 900px) {
-  .card-grid .grid { grid-template-columns: repeat(2, 1fr); }
+  .card-grid .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 600px) {
-  .card-grid .grid { grid-template-columns: 1fr; }
+  .card-grid .grid {
+    grid-template-columns: 1fr;
+  }
 }
