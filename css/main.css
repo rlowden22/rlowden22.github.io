@@ -285,6 +285,22 @@ nav a:hover {
   margin: 0 0 8px;
   font-size: 1.25rem;
 }
+/* "In Progress" badge on a project title */
+.badge-progress {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #ffd166;
+  border: 1px solid #4629ac;
+  color: #4629ac;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .project-desc {
   grid-area: desc;
   margin: 0 0 12px;
