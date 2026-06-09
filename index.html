@@ -95,12 +95,16 @@
           method="POST"
         >
           <h4>send me a message!</h4>
+          <!-- Formspree settings: fixed email subject + redirect back to site after submit -->
+          <input type="hidden" name="_subject" value="New message from rlowden22.github.io" />
+          <input type="hidden" name="_next" value="https://rlowden22.github.io/#top" />
           <div class="mb-3">
             <label for="nameInput" class="form-label">Your name:</label>
             <input
               type="text"
               class="form-control"
               id="nameInput"
+              name="name"
               placeholder="Enter your name"
               required
             />
@@ -111,6 +115,7 @@
               type="email"
               class="form-control"
               id="emailInput"
+              name="email"
               placeholder="name@example.com"
               required
             />
@@ -121,6 +126,7 @@
               type="text"
               class="form-control"
               id="subjectInput"
+              name="subject"
               placeholder="Subject of your message"
             />
           </div>
@@ -131,6 +137,7 @@
             <textarea
               class="form-control"
               id="messageTextarea"
+              name="message"
               rows="5"
               placeholder="Type your message here"
               required
